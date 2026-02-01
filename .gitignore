@@ -1,0 +1,6 @@
+wp-content/
+.env
+*.txt
+.DS_Store
+*.log
+.idea/
