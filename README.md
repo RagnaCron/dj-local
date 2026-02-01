@@ -14,7 +14,7 @@ This repository provides a ready-to-run local Joomla environment with:
 - Git (optional)
 
 ## Quick start
-1. Clone or create project directory.
+1. Clone this repository.
 2. Create a `.env` (see example below).
 3. Start services:
     ```
@@ -23,6 +23,7 @@ This repository provides a ready-to-run local Joomla environment with:
 4. Visit:
     - Joomla: http://localhost:8080
     - phpMyAdmin: http://localhost:8081
+    - mailhog: http://localhost:8025
 
 To stop and remove containers (keep volumes):
 ```
@@ -36,9 +37,9 @@ docker compose down -v
 
 ## Example .env
 ```
-MYSQL_DATABASE=jo_database
-MYSQL_USER=jouser
-MYSQL_PASSWORD=jo_password
+MYSQL_DATABASE=joomla_db
+MYSQL_USER=joomla_user
+MYSQL_PASSWORD=joomla_password
 MYSQL_ROOT_PASSWORD=root_password
 ```
 

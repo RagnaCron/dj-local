@@ -41,7 +41,7 @@ services:
       - "8080:80"
     env_file: .env
     environment:
-      JOOMLA_DB_HOST: database:3306
+      JOOMLA_DB_HOST: database
       JOOMLA_DB_NAME: ${MYSQL_DATABASE}
       JOOMLA_DB_USER: ${MYSQL_USER}
       JOOMLA_DB_PASSWORD: ${MYSQL_PASSWORD}
