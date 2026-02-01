@@ -6,7 +6,8 @@ Lightweight, local Joomla development environment using Docker (docker-compose).
 This repository provides a ready-to-run local Joomla environment with:
 - Joomla 
 - MariaDB
-- phpMyAdmin 
+- phpMyAdmin
+- Mailhog
 - Persistent volumes for code and database
 
 ## Requirements
