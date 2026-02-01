@@ -1,6 +1,6 @@
 # Docker Joomla — Local Development
 
-Lightweight, reproducible local Joomla development environment using Docker (docker-compose).
+Lightweight, local Joomla development environment using Docker (docker-compose).
 
 ## Overview
 This repository provides a ready-to-run local Joomla environment with:
