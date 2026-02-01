@@ -1,4 +1,3 @@
-#version: "3.9"
 
 services:
   database:
@@ -47,6 +46,8 @@ services:
       JOOMLA_DB_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - joomla_data:/var/www/html
+      - ./docker/php/joomla.ini:/usr/local/etc/php/conf.d/zz-joomla.ini:ro
+      - joomla_php_tmp:/tmp/php
     networks:
       - joomla-network
 
@@ -64,6 +65,8 @@ volumes:
   joomla_data:
     driver: local
   mariadb_data:
+    driver: local
+  joomla_php_tmp:
     driver: local
 
 networks:
